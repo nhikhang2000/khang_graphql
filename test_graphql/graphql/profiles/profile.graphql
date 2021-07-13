@@ -1,0 +1,22 @@
+input createProfileInput{
+    first_name:String!
+    last_name:String!
+    address:String!
+}
+type Profile{
+    first_name:String
+    last_name:String
+    address:String
+}
+type ResponseCreateProfile {
+    status: String
+    Profile: Profile
+}
+
+extend type Mutation {
+    insert(input: createProfileInput @spread): ResponseCreateProfile!
+    @field(resolver: "Profile@createProfile")
+    update(input: UpdateProfile! @spread): UpdatePasswordResponse! @field()
+}
+
+
