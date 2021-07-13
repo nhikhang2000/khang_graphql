@@ -30,9 +30,9 @@ Route::prefix('/user')->group(function(){
 });
 
 //xác thực token để xác tực api
-Route::group(['middleware' => 'auth:api'], function() {
-    Route::get('profiles', [ProfilesController::class,'index']);
-    Route::post('profiles', [ProfilesController::class,'store']);
-    Route::put('profiles/{id}', [ProfilesController::class,'update']);
-    Route::delete('profiles/{id}', [ProfilesController::class,'destroy']);
-});
+// Route::group(['middleware' => 'auth:api'], function() {
+//     Route::get('profiles', [ProfilesController::class,'index']);
+//     Route::post('profiles', [ProfilesController::class,'store']);
+//     Route::put('profiles/{id}', [ProfilesController::class,'update']);
+//     Route::delete('profiles/{id}', [ProfilesController::class,'destroy']);
+// });
