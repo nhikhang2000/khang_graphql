@@ -10,6 +10,7 @@ class ProfilesModel extends Model
     protected $table = 'profiles';
     protected $primaryKey = 'id';
     protected $fillable = [
+        'user_id',
         'first_name',
         'last_name',
         'address'
