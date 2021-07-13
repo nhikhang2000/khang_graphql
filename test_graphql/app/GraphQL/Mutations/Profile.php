@@ -36,7 +36,4 @@ class Profile
             'Profile'=>$result
         ];
     }
-    public function updateProfile($rootValue, array $args, GraphQLContext $context, ResolveInfo $resolveInfo){
-        
-    }
 }

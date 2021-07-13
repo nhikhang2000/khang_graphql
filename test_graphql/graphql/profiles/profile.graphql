@@ -16,7 +16,7 @@ type ResponseCreateProfile {
 extend type Mutation {
     insert(input: createProfileInput @spread): ResponseCreateProfile!
     @field(resolver: "Profile@createProfile")
-    update(input: UpdateProfile! @spread): UpdatePasswordResponse! @field()
+
 }
 
 
