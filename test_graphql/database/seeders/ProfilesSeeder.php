@@ -18,7 +18,7 @@ class ProfilesSeeder extends Seeder
         //
         for($i =1; $i <= 5; $i++){
             DB::table('profiles')->insert([
-                'user_id' => Str::random(10),
+                // 'user_id' => Str::random(10),
                 'first_name' => Str::random(10),
                 'last_name' => Str::random(50),
                 'address' => Str::random(10)
